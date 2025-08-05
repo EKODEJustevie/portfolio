@@ -1,0 +1,302 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+section{
+    height: auto;
+}
+
+h2{
+    color: blue;
+
+}
+
+
+/* haut de page */
+
+.haut_de_page{
+    
+    width: 100%;
+    height: auto;
+}
+
+    .photo_de_couverture{
+        width: 100%;
+        position: relative;
+    }
+
+        .photo_de_couverture img{
+            width: 100%;
+            display: block;
+        }
+
+        .photo_de_profil{
+            border: 5px solid #FFF;
+            border-radius: 50%;
+            background-color: #1a1a1a;
+            overflow: hidden;
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            top: 100%; 
+            left: 8%; 
+            transform: translateY(-50%);
+        }
+
+            .photo_de_profil img{
+                width: 100%;
+                height: 100%;
+            }
+
+
+    .section_nom_prénom_profils_age{    
+        display: flex;
+        justify-content: end;
+        background-color: #FFF;
+        padding: 10px;
+    }
+
+        .noms_age{
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .noms_age h1{
+            color: blue;
+        }
+
+        .noms_age h2{
+            color:  #fbca03;
+        }
+    
+    
+    
+
+/* bas_de_page */
+
+.bas_de_page h2{
+    color: #001aae;
+    margin: 10px;
+    
+}
+
+    .description{
+    display: flex;
+    margin: 0px;      
+    }
+
+    .description h2{
+        width: 50 px;
+        height: 30px;
+        font-size: 18px;
+        background-color: yellow;
+        border-radius: 10%; 
+        margin: 5px; 
+        padding: auto;
+        color: rgb(255, 255, 255);
+        text-align: center;        
+    }
+
+    .description_text{
+        width: 80%;
+    }
+
+
+/* Cas générale*/
+
+
+.logo_section{
+    display: flex;
+}
+
+.logo_section img{
+    width: 5%;   
+}
+
+.parcourt_scolaire, .experience, .langues, .skills, .hobbies, .contact{
+    margin: 0px;
+    margin-top: 10px;
+    padding: 10px;    
+}
+
+
+/* lignes de séparation des sections */
+
+
+
+
+
+/* Eléments  */
+
+.parcourt_scolaire_element_contenaire, .experience_element_contenaire, .langues_element_contenaire{
+    display: flex;  
+}
+
+    .parcourt_scolaire_element{
+        width: 20%;
+        padding: 10px;  
+        margin: 20px;
+        flex: 1;
+        border-radius: 5px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        border: 2px solid rgba(0, 0, 0, 0.2);
+
+        color: #757575;
+        font-weight: bold;
+    }
+
+    .parcourt_scolaire_element p, a{
+        color: transparent;
+    }
+    
+    .parcourt_scolaire_element p:hover, a:hover{
+        transition: 0.3s;
+        color: #757575;
+    }
+
+        .parcourt_scolaire_element img{
+            width: 100%;
+        }
+
+
+
+
+/* skills */
+
+.conteniare_cartes{
+    display: flex;
+    gap: 4px;
+}
+
+.cart{
+    position: relative;
+    left: 0px;
+    width: 80px;
+    border-radius: 4px;
+    padding: 8px;
+    height: 160px;
+    background-color: white;
+    transition: 0.4s ease-in-out;
+    flex: 1;
+    overflow: hidden;
+    color: #FFF;
+}
+
+.cart li{
+    color: transparent;
+}
+
+.cart:nth-child(1){
+    background-color: #E34C26;
+    color: #FFF;
+    
+}
+
+
+.cart:nth-child(2){
+    background-color: #474A8A;
+}
+
+.cart:nth-child(3){
+    background-color: #306998;
+
+}
+
+
+.cart:nth-child(4){
+    background-color: #4fccf3;
+   
+}
+
+
+.cart:nth-child(5){
+    background-color: #428FF5;
+}
+
+
+.cart:nth-child(6){
+    background-color: #001aae;
+}
+
+.cart:nth-child(7){
+    background-color: #001aae;
+}
+
+.cart:hover{
+    flex: 3;
+    font-weight: bold;
+    cursor: pointer;
+
+    li{
+        color: #fff;
+    }
+}
+
+
+
+
+.carth{
+    position: relative;
+    left: 0px;
+    width: 80px;
+    border-radius: 4px;
+    padding: 8px;
+    height: 160px;
+    background-color: #001aae;
+    transition: 0.4s ease-in-out;
+    flex: 1;
+    overflow: hidden;
+    color: #fff;
+}
+
+.carth:hover{
+    flex: 3;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.carth p{
+    color: transparent
+}
+
+.carth p:hover{
+    color: #fff;
+}
+
+.contact_lien{
+    color: #b81111;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    gap: auto;
+}
+
+
+
+.contact_lien ul{
+    display: flex;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.gabon{
+    width: 30px;
+    height: 30px;
+}
+.footerp{
+    text-align: center;
+}
+.cvpapier{
+    color: #001aae;
+    text-decoration: none;
+}
