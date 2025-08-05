@@ -1,16 +1,9 @@
 
     
-    const birthDate = new Date("2005-14-09T00:00:00"); // YYYY-MM-DDTHH:MM:SS
+    const birthDate = new Date("2005-14-09T00:00:00"); 
 
     function updateAge() {
       const now = new Date();
-      let diff = now - birthDate;
-
-      if (diff < 0) {
-        document.getElementById("age").innerText = "Tu n'es pas encore né(e) !";
-        return;
-      }
-
       const msPerSecond = 1000;
       const msPerMinute = msPerSecond * 60;
       const msPerHour = msPerMinute * 60;
@@ -27,20 +20,9 @@
       const days = Math.floor(diff / msPerDay);
       diff -= days * msPerDay;
 
-      const hours = Math.floor(diff / msPerHour);
-      diff -= hours * msPerHour;
-
-      const minutes = Math.floor(diff / msPerMinute);
-      diff -= minutes * msPerMinute;
-
-      const seconds = Math.floor(diff / msPerSecond);
-
       document.getElementById("age").innerText =
-        `${years} ans, ${months} mois, ${days} jours, ` +
-        `${hours}h ${minutes}min ${seconds}s`;
+        `${years} ans, ${months} mois, ${days} jours, `;
     }
+    updateAge();
 
-    // Mettre à jour toutes les secondes
-    setInterval(updateAge, 1000);
-    updateAge(); // Exécution initiale
   
