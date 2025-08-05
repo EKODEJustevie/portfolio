@@ -23,6 +23,7 @@
       document.getElementById("age").innerText =
         `${years} ans, ${months} mois, ${days} jours, `;
     }
+    setInterval(updateAge, 1000);
     updateAge();
 
   
